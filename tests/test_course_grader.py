@@ -29,7 +29,7 @@ def test_non_numeric_input():
         convert_to_letter_grade("test string")
 
     with pytest.raises(TypeError, match="Score must be a numeric value"):
-        convert_to_letter_grade(91, 92, 93)
+        convert_to_letter_grade([91, 92, 93])
 
     with pytest.raises(TypeError, match="Score must be a numeric value"):
         convert_to_letter_grade(None)
