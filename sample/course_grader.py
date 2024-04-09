@@ -18,7 +18,7 @@ def convert_to_letter_grade(score):
     # check if the user input for score is an integer or float type
     if not isinstance(score, (int, float)):
         # raise the TypeError with appropriate message if it's not per lab instructions
-        raise TypeError("Score must be a numerical value")
+        raise TypeError("Score must be a numeric value")
     
     # check if the user input is between 0 and 100
     if score < 0 or score > 100:
