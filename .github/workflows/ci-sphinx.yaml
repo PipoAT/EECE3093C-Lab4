@@ -1,9 +1,9 @@
 name: Doc Generation
 run-name: ${{ github.actor }} - Docs
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+push:
+  tags:
+    - 'v*.*.*'
 jobs:
   build-docs:
     runs-on: ubuntu-latest
